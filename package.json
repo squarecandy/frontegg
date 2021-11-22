@@ -2,12 +2,20 @@
   "name": "vue-hosted-login-box",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Frontegg",
+    "email": "hello@frontegg.com",
+    "url": "https://frontegg.com"
+  },
+  "license": "MIT",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "start": "npm run serve",
+    "serve": "vue-cli-service serve --port 3000",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@frontegg/vue": "^0.2.25-alpha.1491571970",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
