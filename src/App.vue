@@ -5,6 +5,7 @@
     </div>
     <div>
       <button v-if="this.authState.user" v-on:click="showAccessToken">What is my access token?</button>
+      <button v-if="this.authState.user" v-on:click="showTenants">Show my tenants</button>
       <button v-if="!this.authState.user" v-on:click="loginWithRedirect">Not logged in. Click to Login</button>
     </div>
   </div>
@@ -19,10 +20,14 @@ export default {
     showAccessToken() {
       alert(this.authState.user.accessToken);
     },
+    showTenants() {
+      alert(JSON.stringify(this.tenantsState.tenants));
+    },
   },
   data() {
     return {
       ...this.mapAuthState(),
+      ...this.mapTenantsState()
     }
   }
 };
