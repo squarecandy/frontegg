@@ -12,7 +12,7 @@ const router = new VueRouter({
 Vue.use(Frontegg, {
   contextOptions: {
     baseUrl: "https://app-v2cvgmmwjyc4.frontegg.com",
-    clientId: "fcff4bd3-fed7-4d10-a3f1-0b1ca5e835a5",
+    clientId: "a50267e3-80f2-48a3-ab1e-5d0c8cacf849",
   },
   hostedLoginBox: true,
   router,
